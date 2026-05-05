@@ -1,0 +1,65 @@
+Go to https://github.com and log in to our account/create an account
+Click the “+” icon at the top-right corner
+Select New repository.
+Enter the Repository name as demo
+Do not change anything else
+Click Create repository
+On the local ubuntu machine:
+cd    ~
+git    clone  reponame    (copy from github page - it should end with .git)
+cd  demo
+nano   hello.py
+print("Hello")                       and then save the file
+git    status
+git   add    hello.py
+git   status
+git   config   --global   user.name   “AtulKahate“ ---> replace with your github name
+git   config   --global   user.email   “newdelthis@gmail.com" --> replace with your github email id
+git   commit    -m    "first commit"
+git   status
+git    log
+git   push   origin    main
+============================================echo "# animated-enigma" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/hkhamparia/animated-enigma.git
+git push -u origin main
+
+===========================================
+git remote add origin https://github.com/hkhamparia/animated-enigma.git
+git branch -M main------------------------Renames your current default branch to main.
+git push -u origin main--------------Uploads your code to the main branch on the remote server (origin).
+
+
+===========================================
+
+git status--------------------------Show current state of repository
+git log-------------------------Show commit history
+git diff------------------Show differences between files
+git pull origin main----------------------Fetch and merge updates from remote
+git fetch origin----------------------Download changes without merging
+git remote -v-------------------------Show remote repositories
+git reset file1.txt-----------------------Undo staging or commits
+git rm file1.txt-------------------------------Remove a file from repository
+git stash------------------------------------Temporarily save changes
+git stash pop-------------------------------Restore stashed changes
+
+===========================================
+
+git   checkout    -b       d-1-------------------------Create branch
+git   checkout    -b       d-2--------------------------Create branch
+----------------------------------------------------------------------------
+git branch---------------#List all branches in the repository
+
+git branch feature1----#Create a new branch
+git checkout feature1----#Switch to an existing branch
+git checkout -b feature2--#Create and switch to a new branch
+git merge feature1----#Merge another branch into the current branch
+git branch -d feature1-----#Delete a local branch
+git push origin feature1----#Push a branch to remote repository
+
+git push origin --delete feature1------#Delete a remote branch
+
+
